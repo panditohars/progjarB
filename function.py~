@@ -1,0 +1,26 @@
+import socket
+import sys
+import threading
+
+class Auth (threading.Thread) :
+    onlinelist = {}
+    flag_=True
+    def __init__ (self,idthread,client,conn) :
+        threading.Thread.__init__(self)
+        self.idthread=idthread
+        self.client = client
+        self.conn = conn
+    
+    def run(self):
+        print ("Melakukan koneksi ke : " + str(self.client) + " (" + self.name + ")")
+        self.clientCall ()
+        print ("Melakukan koneksi ke : " + str(self.client) + " (" + self.name + ")")
+    
+    def mainfunc(self)
+        while self.flag_:
+           logged = 0
+           ask = ' '
+           while (1):
+                if ask[0]== 'MASUK' and logged = 0
+                          
+        
